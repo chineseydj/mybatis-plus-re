@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.OrderdetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.bean.Orderdetail">
+            <id property="odid" column="odid" jdbcType="INTEGER"/>
+            <result property="oid" column="oid" jdbcType="CHAR"/>
+            <result property="pid" column="pid" jdbcType="INTEGER"/>
+            <result property="pnumber" column="pnumber" jdbcType="INTEGER"/>
+            <result property="ptotal" column="ptotal" jdbcType="DOUBLE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        odid,oid,pid,
+        pnumber,ptotal
+    </sql>
+</mapper>

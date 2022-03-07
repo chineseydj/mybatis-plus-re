@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.XmorderMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.bean.Xmorder">
+            <id property="oid" column="oid" jdbcType="CHAR"/>
+            <result property="uid" column="uid" jdbcType="INTEGER"/>
+            <result property="addressid" column="addressId" jdbcType="INTEGER"/>
+            <result property="totalprice" column="totalprice" jdbcType="DOUBLE"/>
+            <result property="remarks" column="remarks" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="odate" column="odate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        oid,uid,addressId,
+        totalprice,remarks,status,
+        odate
+    </sql>
+</mapper>
