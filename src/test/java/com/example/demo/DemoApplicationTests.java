@@ -25,6 +25,7 @@ class DemoApplicationTests {
 //        Admin admin = adminMapper.selectById(1);
         Address address = addressMapper.selectById(1L);
         System.out.println(address);
+        System.out.println("hello");
     }
 
 }
